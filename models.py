@@ -2,7 +2,18 @@
 
 from openerp.osv import fields, orm
 from openerp.tools.translate import _
+from Asterisk import Manager
 import logging
+
+_logger = logging.getLogger(__name__)
+
+
+class asterisk_success_connection_popup(orm.TransientModel):
+    _name = 'asterisk.success.connection.popup'
+    _description = 'Asterisk Success Connection Popup'
+    _columns = {
+        'message': fields.char(string="The connection was established successfully, the configured server is operational", readonly=True, store=True)
+    }
 
 class asterisk_server(orm.Model):
     '''Asterisk server object, stores the parameters of the Asterisk IPBXs'''
@@ -125,3 +136,28 @@ class asterisk_server(orm.Model):
         :param context:
         :return:
         '''
+
+        ast_server = self.browse(cr, uid, ids[0], context=context)
+        ast_manager = False
+
+        try:
+            ast_manager = Manager.Manager(
+                (ast_server.ip_address, ast_server.port),
+                ast_server.login,
+                ast_server.password)
+        except Exception as e:
+            raise orm.except_orm(
+                _("Connection Test Failed!"),
+                _("Here is the error message: %s" % e))
+        finally:
+            if ast_manager:
+                ast_manager.Logoff()
+        # Show Modal
+        return {
+            'name': 'Successful connection to Asterisk',
+            'type': 'ir.actions.act_window',
+            'res_model': 'asterisk.success.connection.popup',
+            'view_mode': 'form',
+            'view_type': 'form',
+            'target': 'new'
+        }

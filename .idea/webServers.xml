@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9a1bd4e2-c0fb-42c4-845a-fc146eec4e5c" name="Odoo Server" url="http://192.168.1.61">
+        <fileTransfer host="192.168.1.61" port="22" rootFolder="/opt/openerp/odoo/addons/odoo-contacts-click2dial" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

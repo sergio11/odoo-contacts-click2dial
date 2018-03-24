@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_odoo-contacts-click2dial_odoo-contacts-click2dial,odoo-contacts-click2dial.odoo-contacts-click2dial,model_odoo-contacts-click2dial_odoo-contacts-click2dial,,1,0,0,0

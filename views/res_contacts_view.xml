@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!-- Form to create and edit the information of available contacts -->
+        <record id="view_res_contacts_form" model="ir.ui.view">
+            <field name="name">res.contacts.form</field>
+            <field name="model">res.contacts</field>
+            <field name="arch" type="xml">
+                <form string="Contacts" version="7.0">
+                    <sheet>
+                        <!-- Contact Image -->
+                        <field name="image" widget='image' class="oe_avatar"
+                               options='{"preview_image":"image_medium"}'/>
+                        <!-- End Contact Image -->
+                        <!-- First Name -->
+                        <div class="oe_title">
+                            <label for="first_name" string="First Name" class="oe_edit_only"/>
+                            <h1>
+                                <field name="first_name"/>
+                            </h1>
+                        </div>
+                        <!-- End First Name -->
+                        <!-- Other -->
+                        <group name="main">
+                            <field name="surname" />
+                            <field name="internal_number" />
+                        </group>
+                        <!-- End Other -->
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <!-- View to list the contacts created -->
+        <record id="view_res_contacts_tree" model="ir.ui.view">
+            <field name="name">res.contacts.tree</field>
+            <field name="model">res.contacts</field>
+            <field name="arch" type="xml">
+                <tree string="Contacts">
+                    <field name="first_name" />
+                    <field name="surname" />
+                    <field name="internal_number"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Action for asterisk.server -->
+        <record id="action_res_contacts" model="ir.actions.act_window">
+            <field name="name">Contacts</field>
+            <field name="res_model">res.contacts</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Top menu item -->
+        <menuitem name="Contacts" id="contacts_menu_root"  action="action_res_contacts"/>
+
+    </data>
+</openerp>

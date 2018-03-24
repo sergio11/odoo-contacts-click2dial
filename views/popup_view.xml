@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!-- view for the connection test popup -->
+        <record id="view_asterisk_success_connection_popup" model="ir.ui.view">
+            <field name="name">view.asterisk.success.connection.popup</field>
+            <field name="model">asterisk.success.connection.popup</field>
+            <field name="arch" type="xml">
+                <form string="generation fichier">
+                    <group>
+                        <field name="message" />
+                    </group>
+                    <footer>
+                        <button string="OK" special="cancel" class="oe_highlight"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <!-- view for originated call popup -->
+        <record id="view_asterisk_call_originated_successfully_popup" model="ir.ui.view">
+            <field name="name">view.asterisk.call.originated.successfully.popup</field>
+            <field name="model">asterisk.call.originated.successfully.popup</field>
+            <field name="arch" type="xml">
+                <form string="generation fichier">
+                    <group>
+                        <field name="message" />
+                    </group>
+                    <footer>
+                        <button string="OK" special="cancel" class="oe_highlight"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</openerp>

@@ -3,21 +3,6 @@
     <data>
 
 
-        <record id="view_asterisk_success_connection_popup" model="ir.ui.view">
-            <field name="name">view.asterisk.success.connection.popup</field>
-            <field name="model">asterisk.success.connection.popup</field>
-            <field name="arch" type="xml">
-                <form string="generation fichier">
-                    <group>
-                        <field name="message" />
-                    </group>
-                    <footer>
-                        <button string="OK" special="cancel" class="oe_highlight"/>
-                    </footer>
-                </form>
-            </field>
-        </record>
-
         <!-- Form to create and edit the information of the Asterisk servers available in the company -->
         <record id="view_asterisk_server_form" model="ir.ui.view">
             <field name="name">asterisk.server.form</field>

@@ -43,6 +43,10 @@
                     <field name="first_name" />
                     <field name="surname" />
                     <field name="internal_number"/>
+                    <!-- Click 2 Dial Button -->
+                    <button name="click2dial" type="object"
+                            string="Call to contact"
+                            icon="gtk-network" colspan="2"/>
                 </tree>
             </field>
         </record>

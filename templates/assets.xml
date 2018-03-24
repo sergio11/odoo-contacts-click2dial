@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!-- Template to overwrite the assets of the backend -->
+        <template id="assets_backend" name="odoo_contacts_click2dial_assets"
+              inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <!-- Include Module JS -->
+                <script type="text/javascript"
+                    src="/odoo-contacts-click2dial/static/odoo_contacts_click2dial.js"></script>
+            </xpath>
+        </template>
+    </data>
+</openerp>

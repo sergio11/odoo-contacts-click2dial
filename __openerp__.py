@@ -27,6 +27,8 @@
     'data': [
         # 'security/ir.model.access.csv',
         'templates.xml',
+        'views/asterisk_server_view.xml',
+        'templates/assets.xml'
     ],
     # only loaded in demonstration mode
     'demo': [

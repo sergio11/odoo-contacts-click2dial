@@ -25,6 +25,10 @@
                         <group name="main">
                             <field name="surname" />
                             <field name="internal_number" />
+                            <!-- Click 2 Dial Button -->
+                            <button name="click2dial" type="object"
+                                string="Click2Dial"
+                                icon="../../../../../odoo-contacts-click2dial/static/src/img/icons/click2dial_icon" colspan="2"/>
                         </group>
                         <!-- End Other -->
 
@@ -45,8 +49,8 @@
                     <field name="internal_number"/>
                     <!-- Click 2 Dial Button -->
                     <button name="click2dial" type="object"
-                            string="Call to contact"
-                            icon="gtk-network" colspan="2"/>
+                            string="Click2Dial"
+                            icon="../../../../../odoo-contacts-click2dial/static/src/img/icons/click2dial_icon" colspan="2"/>
                 </tree>
             </field>
         </record>

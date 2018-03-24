@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from openerp.osv import fields, orm
+from openerp.tools.translate import _
 
 class res_users(orm.Model):
     '''

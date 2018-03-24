@@ -113,6 +113,30 @@ class asterisk_server(orm.Model):
             'context', 'alert_info', 'login', 'password']
     )]
 
+    def _get_asterisk_server_from_user(self, cr, uid, context=None):
+        '''Returns an asterisk.server browse object'''
+        # We check if the user has an Asterisk server configured
+        user = self.pool['res.users'].browse(cr, uid, uid, context=context)
+
+        if user.asterisk_server_id.id:
+            ast_server = user.asterisk_server_id
+        else:
+            # If the user doesn't have an asterisk server,
+            # we take the first one of the user's company
+            asterisk_server_ids = self.search(
+                cr, uid, [('company_id', '=', user.company_id.id)],
+                context=context)
+
+            if not asterisk_server_ids:
+                raise orm.except_orm(
+                    _('Error:'),
+                    _("No Asterisk server configured for the company '%s'.")
+                    % user.company_id.name)
+            else:
+                ast_server = self.browse(
+                    cr, uid, asterisk_server_ids[0], context=context)
+        return ast_server
+
     def _connect_to_asterisk(self, cr, uid, context=None):
         '''
         Open the connection to the Asterisk Manager

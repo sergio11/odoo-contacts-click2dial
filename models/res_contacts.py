@@ -1,15 +1,17 @@
 # -*- coding: utf-8 -*-
 
 from openerp.osv import fields, orm
-from openerp import tools, addons
+from openerp import tools, addons, api
+from openerp.tools.translate import _
 import logging
 
 _logger = logging.getLogger(__name__)
 
 class res_contacts(orm.Model):
     '''Model to refresh and manage contacts'''
-    _name = "res.contacts"
-    _description = "Contacts"
+    _name = 'res.contacts'
+    _inherit = 'phone.common'
+    _description = 'Contacts'
 
 
     def _get_image(self, cr, uid, ids, name, args, context=None):
@@ -73,15 +75,19 @@ class res_contacts(orm.Model):
         'image': _get_default_image
     }
 
+
     def click2dial(self, cr, uid, ids, context=None):
         '''
         Dial to contact
         :return:
         '''
 
+        res = super(res_contacts, self).click2dial(cr, uid, ids, context=context)
+
         # Show Modal
         return {
-            'name': 'Call originated successfully',
+            'name': 'Call to %s originated successfully'
+                % res['dialed_number'],
             'type': 'ir.actions.act_window',
             'res_model': 'asterisk.call.originated.successfully.popup',
             'view_mode': 'form',

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+    <!-- View Call History -->
+    <record id="view_res_call_history_tree" model="ir.ui.view">
+            <field name="name">res.call.history.tree</field>
+            <field name="model">res.call.history</field>
+            <field name="arch" type="xml">
+                <tree string="Call History">
+                    <field name="user" />
+                    <field name="contact" context="{'display_name': True}" />
+                    <field name="start_date" />
+                </tree>
+            </field>
+        </record>
+
+
+    <!-- Action for res.call.history -->
+    <record id="action_res_call_history" model="ir.actions.act_window">
+        <field name="name">Call History</field>
+        <field name="res_model">res.call.history</field>
+        <field name="view_mode">tree</field>
+    </record>
+
+    <!-- Menu entry under Settings > Technical > Phone -->
+    <menuitem action="action_res_call_history" id="menu_action_res_call_history" parent="menu_config_phone" sequence="50"/>
+
+
+</data>
+</openerp>

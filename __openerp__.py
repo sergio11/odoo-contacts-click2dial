@@ -30,7 +30,8 @@
         'views/asterisk_server_view.xml',
         'views/res_contacts_view.xml',
         'views/popup_view.xml',
-        'views/res_users_view.xml'
+        'views/res_users_view.xml',
+        'views/res_call_history_view.xml'
         #'templates/assets.xml'
     ],
     # only loaded in demonstration mode

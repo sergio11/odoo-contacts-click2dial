@@ -25,6 +25,7 @@
                         <group name="main">
                             <field name="surname" />
                             <field name="internal_number" />
+                            <field name="email"/>
                             <!-- Click 2 Dial Button -->
                             <button name="click2dial" type="object"
                                 string="Click2Dial"
@@ -44,8 +45,8 @@
             <field name="model">res.contacts</field>
             <field name="arch" type="xml">
                 <tree string="Contacts">
-                    <field name="first_name" />
-                    <field name="surname" />
+                    <field name="display_name" />
+                    <field name="email" />
                     <field name="internal_number"/>
                     <!-- Click 2 Dial Button -->
                     <button name="click2dial" type="object"

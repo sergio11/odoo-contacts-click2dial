@@ -39,6 +39,7 @@ class phone_common(orm.AbstractModel):
                                                              , contacts[0].internal_number, user.caller_id, channel, ast_server.context))
 
         try:
+            # Originate Call
             ast_manager.Originate(
                 channel,
                 context=ast_server.context,
@@ -46,6 +47,11 @@ class phone_common(orm.AbstractModel):
                 priority=str(ast_server.extension_priority),
                 timeout=str(ast_server.wait_time * 1000),
                 caller_id=user.caller_id)
+
+            # Register Call
+            self.pool.get('res.call.history').create(cr, uid, {
+                'user': user.id, 'contact': contacts[0].id}, context=context)
+
         except Exception as e:
             _logger.error(
                 "Error in the Originate request to Asterisk server %s"

@@ -210,7 +210,7 @@ class asterisk_server(orm.Model):
                 ast_manager.Logoff()
         # Show Modal
         return {
-            'name': 'Successful connection to Asterisk',
+            'name': _('Successful connection to Asterisk'),
             'type': 'ir.actions.act_window',
             'res_model': 'asterisk.success.connection.popup',
             'view_mode': 'form',

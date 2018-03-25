@@ -1,0 +1,589 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* odoo-contacts-click2dial
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-25 10:56+0000\n"
+"PO-Revision-Date: 2018-03-25 10:56+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: odoo-contacts-click2dial
+#: field:asterisk.server,login:0
+msgid "AMI Login"
+msgstr "AMI Login"
+
+#. module: odoo-contacts-click2dial
+#: field:asterisk.server,password:0
+msgid "AMI Password"
+msgstr "AMI Password"
+
+#. module: odoo-contacts-click2dial
+#: field:asterisk.server,active:0
+msgid "Active"
+msgstr "Active"
+
+#. module: odoo-contacts-click2dial
+#: help:asterisk.server,wait_time:0
+msgid "Amount of time (in seconds) Asterisk will try to reach the user's phone before hanging up."
+msgstr "Amount of time (in seconds) Asterisk will try to reach the user's phone before hanging up."
+
+#. module: odoo-contacts-click2dial
+#: model:ir.model,name:odoo-contacts-click2dial.model_asterisk_call_originated_successfully_popup
+msgid "Asterisk Call Originated Successfully Popup"
+msgstr "Asterisk Call Originated Successfully Popup"
+
+#. module: odoo-contacts-click2dial
+#: field:res.users,asterisk_chan_type:0
+msgid "Asterisk Channel Type"
+msgstr "Asterisk Channel Type"
+
+#. module: odoo-contacts-click2dial
+#: field:asterisk.server,ip_address:0
+msgid "Asterisk IP address or DNS"
+msgstr "Asterisk IP address or DNS"
+
+#. module: odoo-contacts-click2dial
+#: view:asterisk.server:odoo-contacts-click2dial.view_asterisk_server_form
+msgid "Asterisk Manager Interface"
+msgstr "Asterisk Manager Interface"
+
+#. module: odoo-contacts-click2dial
+#: field:res.users,asterisk_server_id:0
+msgid "Asterisk Server"
+msgstr "Asterisk Server"
+
+#. module: odoo-contacts-click2dial
+#: field:asterisk.server,name:0
+msgid "Asterisk Server Name"
+msgstr "Asterisk Server Name"
+
+#. module: odoo-contacts-click2dial
+#: view:asterisk.server:odoo-contacts-click2dial.view_asterisk_server_form
+#: view:asterisk.server:odoo-contacts-click2dial.view_asterisk_server_tree
+#: model:ir.actions.act_window,name:odoo-contacts-click2dial.action_asterisk_server
+#: model:ir.model,name:odoo-contacts-click2dial.model_asterisk_server
+#: model:ir.ui.menu,name:odoo-contacts-click2dial.act_menu_ast_server
+msgid "Asterisk Servers"
+msgstr "Asterisk Servers"
+
+#. module: odoo-contacts-click2dial
+#: model:ir.model,name:odoo-contacts-click2dial.model_asterisk_success_connection_popup
+msgid "Asterisk Success Connection Popup"
+msgstr "Asterisk Success Connection Popup"
+
+#. module: odoo-contacts-click2dial
+#: help:res.users,asterisk_chan_type:0
+msgid "Asterisk channel type, as used in the Asterisk dialplan. If the user has a regular IP phone, the channel type is 'SIP'."
+msgstr "Asterisk channel type, as used in the Asterisk dialplan. If the user has a regular IP phone, the channel type is 'SIP'."
+
+#. module: odoo-contacts-click2dial
+#: help:asterisk.server,context:0
+msgid "Asterisk dialplan context from which the calls will be made. Refer to /etc/asterisk/extensions.conf on your Asterisk server."
+msgstr "Asterisk dialplan context from which the calls will be made. Refer to /etc/asterisk/extensions.conf on your Asterisk server."
+
+#. module: odoo-contacts-click2dial
+#: help:res.users,asterisk_server_id:0
+msgid "Asterisk server on which the user's phone is connected. If you leave this field empty, it will use the first Asterisk server of the user's company."
+msgstr "Asterisk server on which the user's phone is connected. If you leave this field empty, it will use the first Asterisk server of the user's company."
+
+#. module: odoo-contacts-click2dial
+#: model:ir.actions.act_window,name:odoo-contacts-click2dial.action_res_call_history
+#: model:ir.model,name:odoo-contacts-click2dial.model_res_call_history
+#: model:ir.ui.menu,name:odoo-contacts-click2dial.menu_action_res_call_history
+#: view:res.call.history:odoo-contacts-click2dial.view_res_call_history_tree
+msgid "Call History"
+msgstr "Call History"
+
+#. module: odoo-contacts-click2dial
+#: code:addons/odoo-contacts-click2dial/models/res_contacts.py:87
+#, python-format
+msgid "Call to %s originated successfully"
+msgstr "Call to %s originated successfully"
+
+#. module: odoo-contacts-click2dial
+#: code:addons/odoo-contacts-click2dial/models/res_users.py:54
+#: field:res.users,caller_id:0
+#, python-format
+msgid "Caller ID"
+msgstr "Caller ID"
+
+#. module: odoo-contacts-click2dial
+#: help:res.users,caller_id:0
+msgid "Caller ID used for the calls initiated by this user."
+msgstr "Caller ID used for the calls initiated by this user."
+
+#. module: odoo-contacts-click2dial
+#: code:addons/odoo-contacts-click2dial/models/phone_common.py:63
+#, python-format
+msgid "Click to dial with Asterisk failed.\n"
+"Here is the error: '%s'"
+msgstr "Click to dial with Asterisk failed.\n"
+"Here is the error: '%s'"
+
+#. module: odoo-contacts-click2dial
+#: view:res.contacts:odoo-contacts-click2dial.view_res_contacts_form
+#: view:res.contacts:odoo-contacts-click2dial.view_res_contacts_tree
+msgid "Click2Dial"
+msgstr "Click2Dial"
+
+#. module: odoo-contacts-click2dial
+#: field:asterisk.server,company_id:0
+msgid "Company"
+msgstr "Company"
+
+#. module: odoo-contacts-click2dial
+#: help:asterisk.server,company_id:0
+msgid "Company who uses the Asterisk server."
+msgstr "Company who uses the Asterisk server."
+
+#. module: odoo-contacts-click2dial
+#: code:addons/odoo-contacts-click2dial/models.py:160
+#: code:addons/odoo-contacts-click2dial/models/asterisk_server.py:206
+#, python-format
+msgid "Connection Test Failed!"
+msgstr "Connection Test Failed!"
+
+#. module: odoo-contacts-click2dial
+#: field:res.call.history,contact:0
+msgid "Contact"
+msgstr "Contact"
+
+#. module: odoo-contacts-click2dial
+#: field:res.contacts,description:0
+msgid "Contact Description"
+msgstr "Contact Description"
+
+#. module: odoo-contacts-click2dial
+#: help:res.contacts,display_name:0
+msgid "Contact Display name"
+msgstr "Contact Display name"
+
+#. module: odoo-contacts-click2dial
+#: field:res.contacts,image:0
+msgid "Contact Image"
+msgstr "Contact Image"
+
+#. module: odoo-contacts-click2dial
+#: help:res.call.history,contact:0
+msgid "Contact that has been called"
+msgstr "Contact that has been called"
+
+#. module: odoo-contacts-click2dial
+#: model:ir.actions.act_window,name:odoo-contacts-click2dial.action_res_contacts
+#: model:ir.model,name:odoo-contacts-click2dial.model_res_contacts
+#: model:ir.ui.menu,name:odoo-contacts-click2dial.contacts_menu_root
+#: view:res.contacts:odoo-contacts-click2dial.view_res_contacts_form
+#: view:res.contacts:odoo-contacts-click2dial.view_res_contacts_tree
+msgid "Contacts"
+msgstr "Contacts"
+
+#. module: odoo-contacts-click2dial
+#: field:asterisk.call.originated.successfully.popup,create_uid:0
+#: field:asterisk.server,create_uid:0
+#: field:asterisk.success.connection.popup,create_uid:0
+#: field:res.call.history,create_uid:0
+#: field:res.contacts,create_uid:0
+msgid "Created by"
+msgstr "Created by"
+
+#. module: odoo-contacts-click2dial
+#: field:asterisk.call.originated.successfully.popup,create_date:0
+#: field:asterisk.server,create_date:0
+#: field:asterisk.success.connection.popup,create_date:0
+#: field:res.call.history,create_date:0
+#: field:res.contacts,create_date:0
+msgid "Created on"
+msgstr "Created on"
+
+#. module: odoo-contacts-click2dial
+#: selection:res.users,asterisk_chan_type:0
+msgid "DAHDI"
+msgstr "DAHDI"
+
+#. module: odoo-contacts-click2dial
+#: field:asterisk.server,context:0
+msgid "Dialplan Context"
+msgstr "Dialplan Context"
+
+#. module: odoo-contacts-click2dial
+#: view:asterisk.server:odoo-contacts-click2dial.view_asterisk_server_form
+msgid "Dialplan Parameters"
+msgstr "Dialplan Parameters"
+
+#. module: odoo-contacts-click2dial
+#: field:asterisk.call.originated.successfully.popup,display_name:0
+#: field:asterisk.server,display_name:0
+#: field:asterisk.success.connection.popup,display_name:0
+#: field:phone.common,display_name:0
+#: field:res.call.history,display_name:0
+#: field:res.contacts,display_name:0
+msgid "Display Name"
+msgstr "Display Name"
+
+#. module: odoo-contacts-click2dial
+#: field:res.contacts,email:0
+msgid "Email"
+msgstr "Email"
+
+#. module: odoo-contacts-click2dial
+#: constraint:asterisk.server:0
+#: constraint:res.contacts:0
+#: constraint:res.users:0
+msgid "Error message in raise"
+msgstr "Error message in raise"
+
+#. module: odoo-contacts-click2dial
+#: code:addons/odoo-contacts-click2dial/models.py:103
+#: code:addons/odoo-contacts-click2dial/models.py:110
+#: code:addons/odoo-contacts-click2dial/models.py:115
+#: code:addons/odoo-contacts-click2dial/models.py:120
+#: code:addons/odoo-contacts-click2dial/models.py:226
+#: code:addons/odoo-contacts-click2dial/models/asterisk_server.py:85
+#: code:addons/odoo-contacts-click2dial/models/asterisk_server.py:92
+#: code:addons/odoo-contacts-click2dial/models/asterisk_server.py:97
+#: code:addons/odoo-contacts-click2dial/models/asterisk_server.py:102
+#: code:addons/odoo-contacts-click2dial/models/asterisk_server.py:132
+#: code:addons/odoo-contacts-click2dial/models/asterisk_server.py:153
+#: code:addons/odoo-contacts-click2dial/models/asterisk_server.py:159
+#: code:addons/odoo-contacts-click2dial/models/asterisk_server.py:179
+#: code:addons/odoo-contacts-click2dial/models/phone_common.py:20
+#: code:addons/odoo-contacts-click2dial/models/phone_common.py:32
+#: code:addons/odoo-contacts-click2dial/models/phone_common.py:62
+#: code:addons/odoo-contacts-click2dial/models/res_contacts.py:46
+#: code:addons/odoo-contacts-click2dial/models/res_users.py:62
+#, python-format
+msgid "Error:"
+msgstr "Error:"
+
+#. module: odoo-contacts-click2dial
+#: field:asterisk.server,extension_priority:0
+msgid "Extension Priority"
+msgstr "Extension Priority"
+
+#. module: odoo-contacts-click2dial
+#: view:res.contacts:odoo-contacts-click2dial.view_res_contacts_form
+#: field:res.contacts,first_name:0
+msgid "First Name"
+msgstr "First Name"
+
+#. module: odoo-contacts-click2dial
+#: selection:res.users,asterisk_chan_type:0
+msgid "H323"
+msgstr "H323"
+
+#. module: odoo-contacts-click2dial
+#: code:addons/odoo-contacts-click2dial/models.py:161
+#: code:addons/odoo-contacts-click2dial/models/asterisk_server.py:207
+#, python-format
+msgid "Here is the error message: %s"
+msgstr "Here is the error message: %s"
+
+#. module: odoo-contacts-click2dial
+#: selection:res.users,asterisk_chan_type:0
+msgid "IAX2"
+msgstr "IAX2"
+
+#. module: odoo-contacts-click2dial
+#: field:asterisk.call.originated.successfully.popup,id:0
+#: field:asterisk.server,id:0
+#: field:asterisk.success.connection.popup,id:0
+#: field:phone.common,id:0
+#: field:res.call.history,id:0
+#: field:res.contacts,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: odoo-contacts-click2dial
+#: help:asterisk.server,ip_address:0
+msgid "IP address or DNS name of the Asterisk server."
+msgstr "IP address or DNS name of the Asterisk server."
+
+#. module: odoo-contacts-click2dial
+#: code:addons/odoo-contacts-click2dial/models.py:218
+#: code:addons/odoo-contacts-click2dial/models/res_contacts.py:38
+#: code:addons/odoo-contacts-click2dial/models/res_users.py:53
+#: field:res.contacts,internal_number:0
+#: field:res.users,internal_number:0
+#, python-format
+msgid "Internal Number"
+msgstr "Internal Number"
+
+#. module: odoo-contacts-click2dial
+#: field:asterisk.call.originated.successfully.popup,__last_update:0
+#: field:asterisk.server,__last_update:0
+#: field:asterisk.success.connection.popup,__last_update:0
+#: field:phone.common,__last_update:0
+#: field:res.call.history,__last_update:0
+#: field:res.contacts,__last_update:0
+msgid "Last Modified on"
+msgstr "Last Modified on"
+
+#. module: odoo-contacts-click2dial
+#: field:asterisk.call.originated.successfully.popup,write_uid:0
+#: field:asterisk.server,write_uid:0
+#: field:asterisk.success.connection.popup,write_uid:0
+#: field:res.call.history,write_uid:0
+#: field:res.contacts,write_uid:0
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: odoo-contacts-click2dial
+#: field:asterisk.call.originated.successfully.popup,write_date:0
+#: field:asterisk.server,write_date:0
+#: field:asterisk.success.connection.popup,write_date:0
+#: field:res.call.history,write_date:0
+#: field:res.contacts,write_date:0
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: odoo-contacts-click2dial
+#: selection:res.users,asterisk_chan_type:0
+msgid "Local"
+msgstr "Local"
+
+#. module: odoo-contacts-click2dial
+#: help:asterisk.server,login:0
+msgid "Login that Odoo will use to communicate with the Asterisk Manager Interface. Refer to /etc/asterisk/manager.conf on your Asterisk server."
+msgstr "Login that Odoo will use to communicate with the Asterisk Manager Interface. Refer to /etc/asterisk/manager.conf on your Asterisk server."
+
+#. module: odoo-contacts-click2dial
+#: selection:res.users,asterisk_chan_type:0
+msgid "MGCP"
+msgstr "MGCP"
+
+#. module: odoo-contacts-click2dial
+#: code:addons/odoo-contacts-click2dial/models/asterisk_server.py:133
+#, python-format
+msgid "No Asterisk server configured for the company '%s'."
+msgstr "No Asterisk server configured for the company '%s'."
+
+#. module: odoo-contacts-click2dial
+#: code:addons/odoo-contacts-click2dial/models/phone_common.py:33
+#, python-format
+msgid "No callerID configured for the current user"
+msgstr "No callerID configured for the current user"
+
+#. module: odoo-contacts-click2dial
+#: code:addons/odoo-contacts-click2dial/models/asterisk_server.py:154
+#, python-format
+msgid "No channel type configured for the current user."
+msgstr "No channel type configured for the current user."
+
+#. module: odoo-contacts-click2dial
+#: code:addons/odoo-contacts-click2dial/models/asterisk_server.py:160
+#, python-format
+msgid "No resource name configured for the current user"
+msgstr "No resource name configured for the current user"
+
+#. module: odoo-contacts-click2dial
+#: selection:res.users,asterisk_chan_type:0
+msgid "PJSIP"
+msgstr "PJSIP"
+
+#. module: odoo-contacts-click2dial
+#: help:asterisk.server,password:0
+msgid "Password that Odoo will use to communicate with the Asterisk Manager Interface. Refer to /etc/asterisk/manager.conf on your Asterisk server."
+msgstr "Password that Odoo will use to communicate with the Asterisk Manager Interface. Refer to /etc/asterisk/manager.conf on your Asterisk server."
+
+#. module: odoo-contacts-click2dial
+#: field:asterisk.server,port:0
+msgid "Port"
+msgstr "Port"
+
+#. module: odoo-contacts-click2dial
+#: help:asterisk.server,extension_priority:0
+msgid "Priority of the extension in the Asterisk dialplan. Refer to /etc/asterisk/extensions.conf on your Asterisk server."
+msgstr "Priority of the extension in the Asterisk dialplan. Refer to /etc/asterisk/extensions.conf on your Asterisk server."
+
+#. module: odoo-contacts-click2dial
+#: code:addons/odoo-contacts-click2dial/models/asterisk_server.py:180
+#, python-format
+msgid "Problem in the request from OpenERP to Asterisk. Here is the error message: %s"
+msgstr "Problem in the request from OpenERP to Asterisk. Here is the error message: %s"
+
+#. module: odoo-contacts-click2dial
+#: code:addons/odoo-contacts-click2dial/models/res_users.py:52
+#: field:res.users,resource:0
+#, python-format
+msgid "Resource Name"
+msgstr "Resource Name"
+
+#. module: odoo-contacts-click2dial
+#: help:res.users,resource:0
+msgid "Resource name for the channel type selected. For example, if you use 'Dial(SIP/phone1)' in your Asterisk dialplan to ring the SIP phone of this user, then the resource name for this user is 'phone1'.  For a SIP phone, the phone number is often used as resource name, but not always."
+msgstr "Resource name for the channel type selected. For example, if you use 'Dial(SIP/phone1)' in your Asterisk dialplan to ring the SIP phone of this user, then the resource name for this user is 'phone1'.  For a SIP phone, the phone number is often used as resource name, but not always."
+
+#. module: odoo-contacts-click2dial
+#: selection:res.users,asterisk_chan_type:0
+msgid "SCCP"
+msgstr "SCCP"
+
+#. module: odoo-contacts-click2dial
+#: selection:res.users,asterisk_chan_type:0
+msgid "SIP"
+msgstr "SIP"
+
+#. module: odoo-contacts-click2dial
+#: view:asterisk.server:odoo-contacts-click2dial.view_asterisk_server_form
+msgid "Server Name"
+msgstr "Server Name"
+
+#. module: odoo-contacts-click2dial
+#: selection:res.users,asterisk_chan_type:0
+msgid "Skinny"
+msgstr "Skinny"
+
+#. module: odoo-contacts-click2dial
+#: view:res.users:odoo-contacts-click2dial.view_users_form
+msgid "Standard Asterisk Parameters"
+msgstr "Standard Asterisk Parameters"
+
+#. module: odoo-contacts-click2dial
+#: field:res.call.history,start_date:0
+msgid "Start Date"
+msgstr "Start Date"
+
+#. module: odoo-contacts-click2dial
+#: code:addons/odoo-contacts-click2dial/models/asterisk_server.py:213
+#, python-format
+msgid "Successful connection to Asterisk"
+msgstr "Successful connection to Asterisk"
+
+#. module: odoo-contacts-click2dial
+#: field:res.contacts,surname:0
+msgid "Surname"
+msgstr "Surname"
+
+#. module: odoo-contacts-click2dial
+#: help:asterisk.server,port:0
+msgid "TCP port on which the Asterisk Manager Interface listens. Defined in /etc/asterisk/manager.conf on Asterisk."
+msgstr "TCP port on which the Asterisk Manager Interface listens. Defined in /etc/asterisk/manager.conf on Asterisk."
+
+#. module: odoo-contacts-click2dial
+#: model:ir.ui.menu,name:odoo-contacts-click2dial.menu_config_phone
+#: view:res.users:odoo-contacts-click2dial.view_users_form
+msgid "Telephony"
+msgstr "Telephony"
+
+#. module: odoo-contacts-click2dial
+#: view:res.users:odoo-contacts-click2dial.view_users_form
+msgid "Telephony Preferences"
+msgstr "Telephony Preferences"
+
+#. module: odoo-contacts-click2dial
+#: view:asterisk.server:odoo-contacts-click2dial.view_asterisk_server_form
+msgid "Test Connection to Asterisk"
+msgstr "Test Connection to Asterisk"
+
+#. module: odoo-contacts-click2dial
+#: code:addons/odoo-contacts-click2dial/models.py:227
+#: code:addons/odoo-contacts-click2dial/models/res_contacts.py:47
+#: code:addons/odoo-contacts-click2dial/models/res_users.py:63
+#, python-format
+msgid "The '%s' for the user '%s' should only have ASCII caracters"
+msgstr "The '%s' for the user '%s' should only have ASCII caracters"
+
+#. module: odoo-contacts-click2dial
+#: code:addons/odoo-contacts-click2dial/models.py:106
+#: code:addons/odoo-contacts-click2dial/models/asterisk_server.py:88
+#, python-format
+msgid "The '%s' should only have ASCII caracters for the Asterisk server '%s'"
+msgstr "The '%s' should only have ASCII caracters for the Asterisk server '%s'"
+
+#. module: odoo-contacts-click2dial
+#: code:addons/odoo-contacts-click2dial/models.py:116
+#: code:addons/odoo-contacts-click2dial/models/asterisk_server.py:98
+#, python-format
+msgid "The 'extension priority' must be a positive value for the Asterisk server '%s'"
+msgstr "The 'extension priority' must be a positive value for the Asterisk server '%s'"
+
+#. module: odoo-contacts-click2dial
+#: help:asterisk.server,active:0
+msgid "The active field allows you to hide the Asterisk server without deleting it."
+msgstr "The active field allows you to hide the Asterisk server without deleting it."
+
+#. module: odoo-contacts-click2dial
+#: code:addons/odoo-contacts-click2dial/models/phone_common.py:21
+#, python-format
+msgid "The call can not be made"
+msgstr "The call can not be made"
+
+#. module: odoo-contacts-click2dial
+#: field:asterisk.call.originated.successfully.popup,message:0
+msgid "The call was originated successfully, soon you can start the conversation from your configured ip terminal"
+msgstr "The call was originated successfully, soon you can start the conversation from your configured ip terminal"
+
+#. module: odoo-contacts-click2dial
+#: field:asterisk.success.connection.popup,message:0
+msgid "The connection was established successfully, the configured server is operational"
+msgstr "The connection was established successfully, the configured server is operational"
+
+#. module: odoo-contacts-click2dial
+#: help:res.contacts,image:0
+msgid "This field holds the image used as image for contact, limited to 1024x1024px."
+msgstr "This field holds the image used as image for contact, limited to 1024x1024px."
+
+#. module: odoo-contacts-click2dial
+#: field:res.call.history,user:0
+msgid "User"
+msgstr "User"
+
+#. module: odoo-contacts-click2dial
+#: help:res.call.history,user:0
+msgid "User who made the call"
+msgstr "User who made the call"
+
+#. module: odoo-contacts-click2dial
+#: help:res.contacts,internal_number:0
+#: help:res.users,internal_number:0
+msgid "User's internal phone number."
+msgstr "User's internal phone number."
+
+#. module: odoo-contacts-click2dial
+#: model:ir.model,name:odoo-contacts-click2dial.model_res_users
+msgid "Users"
+msgstr "Users"
+
+#. module: odoo-contacts-click2dial
+#: field:asterisk.server,wait_time:0
+msgid "Wait Time (sec)"
+msgstr "Wait Time (sec)"
+
+#. module: odoo-contacts-click2dial
+#: code:addons/odoo-contacts-click2dial/models.py:111
+#: code:addons/odoo-contacts-click2dial/models/asterisk_server.py:93
+#, python-format
+msgid "You should set a 'Wait time' value between 1 and 120 seconds for the Asterisk server '%s'"
+msgstr "You should set a 'Wait time' value between 1 and 120 seconds for the Asterisk server '%s'"
+
+#. module: odoo-contacts-click2dial
+#: code:addons/odoo-contacts-click2dial/models.py:121
+#: code:addons/odoo-contacts-click2dial/models/asterisk_server.py:103
+#, python-format
+msgid "You should set a TCP port between 1 and 65535 for the Asterisk server '%s'"
+msgstr "You should set a TCP port between 1 and 65535 for the Asterisk server '%s'"
+
+#. module: odoo-contacts-click2dial
+#: selection:res.users,asterisk_chan_type:0
+msgid "Zap"
+msgstr "Zap"
+
+#. module: odoo-contacts-click2dial
+#: view:asterisk.call.originated.successfully.popup:odoo-contacts-click2dial.view_asterisk_call_originated_successfully_popup
+#: view:asterisk.success.connection.popup:odoo-contacts-click2dial.view_asterisk_success_connection_popup
+msgid "generation fichier"
+msgstr "generation fichier"
+
+#. module: odoo-contacts-click2dial
+#: selection:res.users,asterisk_chan_type:0
+msgid "mISDN"
+msgstr "mISDN"
+

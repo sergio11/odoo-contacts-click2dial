@@ -84,7 +84,7 @@ class res_contacts(orm.Model):
 
         # Show Modal
         return {
-            'name': 'Call to %s originated successfully'
+            'name': _('Call to %s originated successfully')
                 % res['dialed_number'],
             'type': 'ir.actions.act_window',
             'res_model': 'asterisk.call.originated.successfully.popup',

@@ -10,8 +10,7 @@
                 <form string="Contacts" version="7.0">
                     <sheet>
                         <!-- Contact Image -->
-                        <field name="image" widget='image' class="oe_avatar"
-                               options='{"preview_image":"image_medium"}'/>
+                        <field name="image" widget='image' class="oe_avatar oe_left"/>
                         <!-- End Contact Image -->
                         <!-- First Name -->
                         <div class="oe_title">
@@ -28,8 +27,7 @@
                             <field name="email"/>
                             <!-- Click 2 Dial Button -->
                             <button name="click2dial" type="object"
-                                string="Click2Dial"
-                                icon="../../../../../odoo-contacts-click2dial/static/src/img/icons/click2dial_icon" colspan="2"/>
+                                string="Click2Dial"/>
                         </group>
                         <!-- End Other -->
 

@@ -53,28 +53,6 @@ class res_contacts(orm.Model):
 
         return True
 
-
-    def _get_image(self, cr, uid, ids, name, args, context=None):
-        result = dict.fromkeys(ids, False)
-        for obj in self.browse(cr, uid, ids, context=context):
-            result[obj.id] = tools.image_get_resized_images(obj.image)
-        return result
-
-    def _set_image(self, cr, uid, id, name, value, args, context=None):
-        return self.write(cr, uid, [id], {'image': tools.image_resize_image_big(value)}, context=context)
-
-
-    def _get_default_image(self, cr, uid, context=None):
-        '''
-        Get default user image
-        :param cr:
-        :param uid:
-        :param context:
-        :return:
-        '''
-        image_path = addons.get_module_resource('odoo-contacts-click2dial', 'static/src/img', 'user_default.png')
-        return tools.image_resize_image_big(open(image_path, 'rb').read().encode('base64'))
-
     _columns = {
         'first_name': fields.char('First Name', size=50, required=True),
         'surname': fields.char('Surname', size=50, required=True),
@@ -85,8 +63,8 @@ class res_contacts(orm.Model):
             'Internal Number', size=15,
             help="User's internal phone number."),
         'description': fields.html('Contact Description'),
-        'image': fields.binary("Image",
-            help="This field holds the image used as image for contact, limited to 1024x1024px.")
+        'image': fields.binary("Contact Image",
+            help="This field holds the image used as image for contact, limited to 1024x1024px.", required=True)
     }
 
 
@@ -95,11 +73,6 @@ class res_contacts(orm.Model):
         "Error message in raise",
         ['first_name', 'surname', 'internal_number']
     )]
-
-    defaults = {
-        'image': _get_default_image
-    }
-
 
     def click2dial(self, cr, uid, ids, context=None):
         '''
